@@ -21,3 +21,17 @@ for i in range(len(solution)):
         max = solution[i]
         maxsnumber = i
 print(max,maxsnumber)
+
+# second half
+
+
+totalsum = 0
+for i in range(3):
+    max = 0
+    for i in range(len(solution)):
+        if max < solution[i]:
+            max = solution[i]
+    solution.remove(max)
+    totalsum+=max
+    print(max)
+print(totalsum)
